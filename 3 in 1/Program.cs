@@ -98,77 +98,79 @@ void main()
                     {/* Мне больше нравиться такой вариант, ибо я нахожу его более лакончиным конкретно для этой задачи. 
              * Но как говориться спешел фо ю, сделаю и вариант с отработкой обработки двумерных массивов
              */
-                        //    Console.WriteLine("\ny/x |   1\t2\t3\t4\t5\t6\t7\t8\t9");
-                        //    Console.Write("--------------------------------------------------------------------------");
-                        //    Console.WriteLine();
-                        //    for (int ix = 1; ix < 10; ix++)
-                        //    {
-                        //        Console.Write(ix + "   |  ");
-                        //        for (int j = 1; j < 10; j++)
-                        //        {
-                        //            Console.Write("\t" + ix * j);
-                        //        }
-                        //        Console.WriteLine("");
-                        //        Console.WriteLine("");
-                        //    }
-                        //    Console.WriteLine("Tap any button to continue");
-                        //    Console.ReadLine();
-                        //    break;
-                        //}
-
-
-                        int[,] myArray = new int[9, 9];
+                        Console.WriteLine("\ny/x |   1\t2\t3\t4\t5\t6\t7\t8\t9");
+                        Console.Write("--------------------------------------------------------------------------");
+                        Console.WriteLine();
+                        for (int ix = 1; ix < 10; ix++)
                         {
-                            //foreach (int i in myArray.GetLength(0)) ;
-                        }
-
-
-                        int height = myArray.GetLength(0);
-                        int width = myArray.GetLength(1);
-
-                        for (int y = 0; y < height; y++)
-                        {
-                            for (int x = 0; x < width; x++)
+                            Console.Write(ix + "   |  ");
+                            for (int j = 1; j < 10; j++)
                             {
-                                Console.Write(myArray[y, x] + "\t");
+                                Console.Write("\t" + ix * j);
                             }
-                            Console.WriteLine();    
+                            Console.WriteLine("");
+                            Console.WriteLine("");
                         }
+                        Console.WriteLine("Tap any button to continue");
+                        Console.ReadLine();
                         break;
                     }
-                            
-                 
+
+
+                    //     List<int[]> myList = new List<int[]>();
+
+                    //    for (int i = 1; i < 10; i++)
+                    //    {
+                    //        int[] myArray = new int[9];
+                    //        for (int j = 1; j < 10; j++)
+                    //        {
+                    //            myArray[j - 1] = i * j;
+                    //        }
+                    //        myList.Add(myArray);
+                    //    }
+                    //    Console.WriteLine();
+                    //    Console.WriteLine();
+                    //    foreach (int[] fo1 in myList)
+                    //    {
+                    //        List<int> l2 = new List<int>();
+                    //        foreach (int fo2 in fo1)
+                    //        {
+                    //            l2.Add(fo2);
+                    //        }
+                    //        string temp = string.Join("\t", l2);
+                    //        Console.WriteLine(temp);
+                    //    }
+                    //Console.WriteLine("Tap any button to continue");
+                    //Console.ReadLine();                    }
+                    //break;
+
+
+
 
 
                 case 3:
                     {
                         Console.WriteLine("Enter a number");
-                        int userInput = Convert.ToInt32(Console.ReadLine()); 
-                        List <int> resultArray = new List<int> {}; string result;
-                        
-                        while(userInput != 0)
+                        int userInput = Convert.ToInt32(Console.ReadLine());
+
+                        while (userInput != 0)
                         {
-                            for (int divider = 1; divider <= userInput; divider++)
+                            List<int> result = new List<int> { };
+
+                            for (int i = 1; i <= userInput; i++)
                             {
-                                if (userInput % divider == 0)
+                                if (userInput % i == 0)
                                 {
-                                    resultArray.Add(divider);
-                                    result = string.Join(" ", resultArray);
-
+                                    result.Add(i);
                                 }
-                            
-                                Console.WriteLine(result);
+                            }
+                            string temp = string.Join(" ", result);
+                            Console.WriteLine(temp);
 
-
-                            Console.WriteLine("\nIf you wont enter a new number press any button other then 0");
+                            Console.WriteLine("If you want to exit enter 0\n");
                             userInput = Convert.ToInt32(Console.ReadLine());
-
-
-                            } ; 
                         }
-                        
                         break;
-
                     }
                 case 0:
                     Console.WriteLine("\nk -. -");
