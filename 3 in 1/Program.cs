@@ -88,6 +88,7 @@ void main()
                         {
                             count++;
                             Console.WriteLine("Играй по правилам)");
+                            Console.WriteLine("Try № " + count);
 
                         }
                     }
@@ -97,37 +98,75 @@ void main()
                     {/* Мне больше нравиться такой вариант, ибо я нахожу его более лакончиным конкретно для этой задачи. 
              * Но как говориться спешел фо ю, сделаю и вариант с отработкой обработки двумерных массивов
              */
-                        Console.WriteLine("\ny/x |   1\t2\t3\t4\t5\t6\t7\t8\t9");
-                        Console.Write("--------------------------------------------------------------------------");
-                        Console.WriteLine();
-                        for (int ix = 1; ix < 10; ix++)
+                        //    Console.WriteLine("\ny/x |   1\t2\t3\t4\t5\t6\t7\t8\t9");
+                        //    Console.Write("--------------------------------------------------------------------------");
+                        //    Console.WriteLine();
+                        //    for (int ix = 1; ix < 10; ix++)
+                        //    {
+                        //        Console.Write(ix + "   |  ");
+                        //        for (int j = 1; j < 10; j++)
+                        //        {
+                        //            Console.Write("\t" + ix * j);
+                        //        }
+                        //        Console.WriteLine("");
+                        //        Console.WriteLine("");
+                        //    }
+                        //    Console.WriteLine("Tap any button to continue");
+                        //    Console.ReadLine();
+                        //    break;
+                        //}
+
+
+                        int[,] myArray = new int[9, 9];
                         {
-                            Console.Write(ix + "   |  ");
-                            for (int j = 1; j < 10; j++)
-                            {
-                                Console.Write("\t" + ix * j);
-                            }
-                            Console.WriteLine("");
-                            Console.WriteLine("");
+                            //foreach (int i in myArray.GetLength(0)) ;
                         }
-                        Console.WriteLine("Tap any button to continue");
-                        Console.ReadLine();
+
+
+                        int height = myArray.GetLength(0);
+                        int width = myArray.GetLength(1);
+
+                        for (int y = 0; y < height; y++)
+                        {
+                            for (int x = 0; x < width; x++)
+                            {
+                                Console.Write(myArray[y, x] + "\t");
+                            }
+                            Console.WriteLine();    
+                        }
                         break;
                     }
-
-                /*
-
-                 */
+                            
+                 
 
 
                 case 3:
                     {
                         Console.WriteLine("Enter a number");
-
-                        for (int userMessage = Convert.ToInt32(Console.ReadLine()); userMessage % 2 == 0; userMessage++)
+                        int userInput = Convert.ToInt32(Console.ReadLine()); 
+                        List <int> resultArray = new List<int> {}; string result;
+                        
+                        while(userInput != 0)
                         {
+                            for (int divider = 1; divider <= userInput; divider++)
+                            {
+                                if (userInput % divider == 0)
+                                {
+                                    resultArray.Add(divider);
+                                    result = string.Join(" ", resultArray);
 
+                                }
+                            
+                                Console.WriteLine(result);
+
+
+                            Console.WriteLine("\nIf you wont enter a new number press any button other then 0");
+                            userInput = Convert.ToInt32(Console.ReadLine());
+
+
+                            } ; 
                         }
+                        
                         break;
 
                     }

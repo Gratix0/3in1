@@ -13,3 +13,18 @@ C:\Users\ogani\source\repos\3 in 1\3 in 1\obj\Debug\net6.0\refint\3 in 1.dll
 C:\Users\ogani\source\repos\3 in 1\3 in 1\obj\Debug\net6.0\3 in 1.pdb
 C:\Users\ogani\source\repos\3 in 1\3 in 1\obj\Debug\net6.0\3 in 1.genruntimeconfig.cache
 C:\Users\ogani\source\repos\3 in 1\3 in 1\obj\Debug\net6.0\ref\3 in 1.dll
+C:\Users\Александр\Desktop\3in1-main\3 in 1\bin\Debug\net6.0\3 in 1.exe
+C:\Users\Александр\Desktop\3in1-main\3 in 1\bin\Debug\net6.0\3 in 1.deps.json
+C:\Users\Александр\Desktop\3in1-main\3 in 1\bin\Debug\net6.0\3 in 1.runtimeconfig.json
+C:\Users\Александр\Desktop\3in1-main\3 in 1\bin\Debug\net6.0\3 in 1.dll
+C:\Users\Александр\Desktop\3in1-main\3 in 1\bin\Debug\net6.0\3 in 1.pdb
+C:\Users\Александр\Desktop\3in1-main\3 in 1\obj\Debug\net6.0\3 in 1.csproj.AssemblyReference.cache
+C:\Users\Александр\Desktop\3in1-main\3 in 1\obj\Debug\net6.0\3 in 1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Александр\Desktop\3in1-main\3 in 1\obj\Debug\net6.0\3 in 1.AssemblyInfoInputs.cache
+C:\Users\Александр\Desktop\3in1-main\3 in 1\obj\Debug\net6.0\3 in 1.AssemblyInfo.cs
+C:\Users\Александр\Desktop\3in1-main\3 in 1\obj\Debug\net6.0\3 in 1.csproj.CoreCompileInputs.cache
+C:\Users\Александр\Desktop\3in1-main\3 in 1\obj\Debug\net6.0\3 in 1.dll
+C:\Users\Александр\Desktop\3in1-main\3 in 1\obj\Debug\net6.0\refint\3 in 1.dll
+C:\Users\Александр\Desktop\3in1-main\3 in 1\obj\Debug\net6.0\3 in 1.pdb
+C:\Users\Александр\Desktop\3in1-main\3 in 1\obj\Debug\net6.0\3 in 1.genruntimeconfig.cache
+C:\Users\Александр\Desktop\3in1-main\3 in 1\obj\Debug\net6.0\ref\3 in 1.dll
